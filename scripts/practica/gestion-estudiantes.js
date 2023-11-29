@@ -30,12 +30,14 @@ const listaEstudiantes = [estudiante1, estudiante2, estudiante3];
 
 function calcularPromedio(calificaciones) {
 
-    let suma = 0;
-    
+    // let suma = 0;
+
     // Investigar metodo de arrays .reduce()
-    for(let indice = 0; indice < calificaciones.length; indice++) {
-        suma = suma + calificaciones[indice];
-    }
+
+    // for(let indice = 0; indice < calificaciones.length; indice++) {
+    //     suma = suma + calificaciones[indice];
+    // }
+    let suma = calificaciones.reduce((acumulador, valor) => acumulador + valor, 0);
 
     const promedio = suma / calificaciones.length;
 
@@ -44,7 +46,7 @@ function calcularPromedio(calificaciones) {
 
 listaEstudiantes.forEach((estudiante) => {
 
-    let {calificaciones, nombre, edad, curso, promedio} = estudiante;
+    let { calificaciones, nombre, edad, curso, promedio } = estudiante;
 
     promedio = calcularPromedio(calificaciones);
 
