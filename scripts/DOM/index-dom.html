@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bases javascript</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1>Bases Javascript</h1>
+
+    <h2>Subtitulo</h2>
+
+    <p id="text-7" class="bg-red p-10">
+        Esta página es <strong id="text-8">muy sencilla</strong>
+    </p>
+
+    <p>Parrafo 1</p>
+    <p class="bg-red">Parrafo 2</p>
+    <p>Parrafo 3</p>
+
+    <div id="mi-id">
+        <p class="hidden">Texto oculto</p>
+        <p id="p-lorem" class="bg-blue">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus cupiditate sequi
+            doloribus nulla ad et mollitia illo provident eum magni dolorum voluptatem maiores quisquam, deleniti
+            quaerat iure nemo! Tenetur, quam!</p>
+    </div>
+
+    <div>
+        <p class="hidden">Otro texto</p>
+        <p class="bg-red">Otro parrafo pero en rojo</p>
+    </div>
+
+    <div>
+        <p class="hidden">Otro texto</p>
+        <p class="bg-blue">Otro parrafo dentro de un DIV pero en azul</p>
+    </div>
+
+
+
+    <form id="mi-formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+
+        <button type="button" onclick="mostrarDatos()">Mostrar Datos</button>
+    </form>
+
+    <script src="./scripts/DOM/obtener-datos.js"></script>
+</body>
+
+</html>
